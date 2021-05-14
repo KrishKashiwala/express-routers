@@ -3,7 +3,7 @@ const router = express.Router();
 const tigerRouter = require('./tiger')
 const lionRouter = require('./lion')
 router.get('/' , (req , res) => {
-    res.json({'msg' : 'head on to animals/name'})
+    res.json({'msg' : 'head on to /name'})
 })
 router.use('/lion' , lionRouter)
 router.use('/tiger' , tigerRouter)

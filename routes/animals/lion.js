@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
 router.get('/' , (req, res) => {
-    res.json({'msg' : 'inside lion cave!!'})
+    res.sendFile(path.join(__dirname , './htmls/lion.html'))
 })
 module.exports = router
