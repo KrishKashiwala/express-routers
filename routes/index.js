@@ -4,6 +4,6 @@ const router = express.Router();
 router.get('/' , (req , res) => {
     res.json({'msg' : 'head on to /animals'})
 })
-// This code is written by rushi donga
+
 router.use('/animals' , animalRouter)
 module.exports = router 
